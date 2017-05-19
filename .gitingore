@@ -1,0 +1,5 @@
+_Store
+*.o
+*.obj
+*debug*
+*release*
