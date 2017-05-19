@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\libmysql\get_password.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\libmysql\libmysql.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\libmysql\errmsg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\sql-common\client.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\sql-common\my_time.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\sql-common\client_plugin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\sql-common\client_authentication.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\sql\net_serv.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\sql-common\pack.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\sql\auth\password.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\libmysql\mysql_trace.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\libmysql\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7AAA8781-0BF5-3652-8C7A-39A9A153336B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

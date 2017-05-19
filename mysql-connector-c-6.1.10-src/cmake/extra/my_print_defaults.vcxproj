@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{167F62A5-8209-3D08-8FF6-344A2C2C4C9F}</ProjectGUID>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>my_print_defaults</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\extra\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">my_print_defaults.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">my_print_defaults</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\extra\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">my_print_defaults.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">my_print_defaults</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\extra\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">my_print_defaults.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">my_print_defaults</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\extra\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">my_print_defaults.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">my_print_defaults</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\extra\rapidjson\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4800;4805;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4099</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;ENABLED_DEBUG_SYNC;SAFE_MUTEX;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;MUTEX_EVENT;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;ENABLED_DEBUG_SYNC;SAFE_MUTEX;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;MUTEX_EVENT;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\extra\rapidjson\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\extra\rapidjson\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;ws2_32.lib;..\mysys\Debug\mysys.lib;..\mysys_ssl\Debug\mysys_ssl.lib;..\mysys\Debug\mysys.lib;..\dbug\Debug\dbug.lib;..\mysys\Debug\mysys.lib;..\dbug\Debug\dbug.lib;..\strings\Debug\strings.lib;..\zlib\Debug\zlib.lib;yassl\Debug\yassl.lib;yassl\taocrypt\Debug\taocrypt.lib;ws2_32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake/extra/Debug/my_print_defaults.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake/extra/Debug/my_print_defaults.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\extra\rapidjson\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4800;4805;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4099</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DBUG_OFF;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;MUTEX_EVENT;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DBUG_OFF;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;MUTEX_EVENT;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\extra\rapidjson\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\extra\rapidjson\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;ws2_32.lib;..\mysys\Release\mysys.lib;..\mysys_ssl\Release\mysys_ssl.lib;..\mysys\Release\mysys.lib;..\dbug\Release\dbug.lib;..\mysys\Release\mysys.lib;..\dbug\Release\dbug.lib;..\strings\Release\strings.lib;..\zlib\Release\zlib.lib;yassl\Release\yassl.lib;yassl\taocrypt\Release\taocrypt.lib;ws2_32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake/extra/Release/my_print_defaults.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake/extra/Release/my_print_defaults.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\extra\rapidjson\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4800;4805;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4099</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DBUG_OFF;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;MUTEX_EVENT;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DBUG_OFF;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;MUTEX_EVENT;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\extra\rapidjson\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\extra\rapidjson\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;ws2_32.lib;..\mysys\MinSizeRel\mysys.lib;..\mysys_ssl\MinSizeRel\mysys_ssl.lib;..\mysys\MinSizeRel\mysys.lib;..\dbug\MinSizeRel\dbug.lib;..\mysys\MinSizeRel\mysys.lib;..\dbug\MinSizeRel\dbug.lib;..\strings\MinSizeRel\strings.lib;..\zlib\MinSizeRel\zlib.lib;yassl\MinSizeRel\yassl.lib;yassl\taocrypt\MinSizeRel\taocrypt.lib;ws2_32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake/extra/MinSizeRel/my_print_defaults.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake/extra/MinSizeRel/my_print_defaults.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\extra\rapidjson\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4800;4805;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4099</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DBUG_OFF;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;MUTEX_EVENT;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DBUG_OFF;_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOGDI;NOMINMAX;HAVE_CONFIG_H;MUTEX_EVENT;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\extra\rapidjson\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\extra\rapidjson\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;ws2_32.lib;..\mysys\RelWithDebInfo\mysys.lib;..\mysys_ssl\RelWithDebInfo\mysys_ssl.lib;..\mysys\RelWithDebInfo\mysys.lib;..\dbug\RelWithDebInfo\dbug.lib;..\mysys\RelWithDebInfo\mysys.lib;..\dbug\RelWithDebInfo\dbug.lib;..\strings\RelWithDebInfo\strings.lib;..\zlib\RelWithDebInfo\zlib.lib;yassl\RelWithDebInfo\yassl.lib;yassl\taocrypt\RelWithDebInfo\taocrypt.lib;ws2_32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake/extra/RelWithDebInfo/my_print_defaults.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake/extra/RelWithDebInfo/my_print_defaults.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\extra\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/extra/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src -BC:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake --check-stamp-file C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\extra\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/extra/CMakeLists.txt;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\extra\CMakeLists.txt;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\extra\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\extra\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/extra/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src -BC:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake --check-stamp-file C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\extra\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/extra/CMakeLists.txt;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\extra\CMakeLists.txt;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\extra\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\extra\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/extra/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src -BC:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake --check-stamp-file C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\extra\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/extra/CMakeLists.txt;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\extra\CMakeLists.txt;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\extra\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\extra\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/extra/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src -BC:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake --check-stamp-file C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\extra\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/extra/CMakeLists.txt;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\extra\CMakeLists.txt;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\extra\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\extra\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\extra\my_print_defaults.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ResourceCompile Include="C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\versioninfo_exe.rc"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake/ZERO_CHECK.vcxproj">
+      <Project>8F7768FA-B2DD-3292-84B7-7EDD4DCE24A6</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake/dbug/dbug.vcxproj">
+      <Project>6D7F2B33-16EC-3ED5-A2B0-A99D068858EE</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake/mysys_ssl/mysys_ssl.vcxproj">
+      <Project>0597F095-015E-3033-9575-0D21A82BE9AF</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake/strings/strings.vcxproj">
+      <Project>5ADE9E09-7728-31DF-AA2B-804A9A713828</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake/extra/yassl/taocrypt/taocrypt.vcxproj">
+      <Project>0A25496C-2EAA-31B9-AD58-0CB9DC2E1C5B</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake/extra/yassl/yassl.vcxproj">
+      <Project>9E707F5D-FFD9-3C97-B52F-EB50F87F6F57</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake/zlib/zlib.vcxproj">
+      <Project>95226DE9-AA60-3F39-A25B-E3B882F55573</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

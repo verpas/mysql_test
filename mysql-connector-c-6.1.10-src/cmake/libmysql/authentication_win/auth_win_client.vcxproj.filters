@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\libmysql\authentication_win\plugin_client.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\libmysql\authentication_win\handshake_client.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\libmysql\authentication_win\log_client.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\libmysql\authentication_win\common.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\libmysql\authentication_win\handshake.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\libmysql\authentication_win\common.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\libmysql\authentication_win\handshake.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\libmysql\authentication_win\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7AAA8781-0BF5-3652-8C7A-39A9A153336B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{97453E46-A1F8-3CC6-B693-7199798B0EB4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\testclients\mysql_client_test.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\testclients\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7AAA8781-0BF5-3652-8C7A-39A9A153336B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{27C1D691-72F2-3215-A105-ECABB5E87885}</ProjectGUID>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>GenError</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\extra\rapidjson\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\extra\rapidjson\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\extra\rapidjson\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\extra\rapidjson\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\include;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\extra\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/extra/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src -BC:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake --check-stamp-file C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\extra\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/extra/CMakeLists.txt;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\extra\CMakeLists.txt;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\extra\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\extra\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/extra/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src -BC:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake --check-stamp-file C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\extra\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/extra/CMakeLists.txt;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\extra\CMakeLists.txt;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\extra\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\extra\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/extra/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src -BC:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake --check-stamp-file C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\extra\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/extra/CMakeLists.txt;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\extra\CMakeLists.txt;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\extra\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\extra\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/extra/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src -BC:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake --check-stamp-file C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\extra\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/extra/CMakeLists.txt;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\extra\CMakeLists.txt;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\extra\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\extra\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\CMakeFiles\d4f425009f88e1dbf3c543ed7e3e0395\mysqld_error.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../include/mysqld_error.h, ../sql/share/english/errmsg.sys</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+Debug\comp_err.exe --charset=C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/sql/share/charsets --out-dir=C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake/sql/share/ --header_file=C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake/include/mysqld_error.h --name_file=C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake/include/mysqld_ername.h --state_file=C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake/include/sql_state.h --in_file=C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/sql/share/errmsg-utf8.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake/CMakeFiles/d4f425009f88e1dbf3c543ed7e3e0395/mysqld_error.h.rule;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\sql\share\errmsg-utf8.txt;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\extra\comp_err.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\include\mysqld_error.h;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\sql\share\english\errmsg.sys</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../include/mysqld_error.h, ../sql/share/english/errmsg.sys</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+Release\comp_err.exe --charset=C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/sql/share/charsets --out-dir=C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake/sql/share/ --header_file=C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake/include/mysqld_error.h --name_file=C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake/include/mysqld_ername.h --state_file=C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake/include/sql_state.h --in_file=C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/sql/share/errmsg-utf8.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake/CMakeFiles/d4f425009f88e1dbf3c543ed7e3e0395/mysqld_error.h.rule;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\sql\share\errmsg-utf8.txt;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\extra\comp_err.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\include\mysqld_error.h;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\sql\share\english\errmsg.sys</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../include/mysqld_error.h, ../sql/share/english/errmsg.sys</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+MinSizeRel\comp_err.exe --charset=C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/sql/share/charsets --out-dir=C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake/sql/share/ --header_file=C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake/include/mysqld_error.h --name_file=C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake/include/mysqld_ername.h --state_file=C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake/include/sql_state.h --in_file=C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/sql/share/errmsg-utf8.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake/CMakeFiles/d4f425009f88e1dbf3c543ed7e3e0395/mysqld_error.h.rule;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\sql\share\errmsg-utf8.txt;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\extra\comp_err.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\include\mysqld_error.h;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\sql\share\english\errmsg.sys</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../include/mysqld_error.h, ../sql/share/english/errmsg.sys</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+RelWithDebInfo\comp_err.exe --charset=C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/sql/share/charsets --out-dir=C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake/sql/share/ --header_file=C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake/include/mysqld_error.h --name_file=C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake/include/mysqld_ername.h --state_file=C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake/include/sql_state.h --in_file=C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/sql/share/errmsg-utf8.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake/CMakeFiles/d4f425009f88e1dbf3c543ed7e3e0395/mysqld_error.h.rule;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\sql\share\errmsg-utf8.txt;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\extra\comp_err.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\include\mysqld_error.h;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\sql\share\english\errmsg.sys</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\CMakeFiles\6ef57115885520d86856bccf6428b116\GenError.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake/CMakeFiles/6ef57115885520d86856bccf6428b116/GenError.rule;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\include\mysqld_error.h;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\sql\share\english\errmsg.sys;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\sql\share\errmsg-utf8.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\extra\CMakeFiles\GenError</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake/CMakeFiles/6ef57115885520d86856bccf6428b116/GenError.rule;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\include\mysqld_error.h;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\sql\share\english\errmsg.sys;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\sql\share\errmsg-utf8.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\extra\CMakeFiles\GenError</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake/CMakeFiles/6ef57115885520d86856bccf6428b116/GenError.rule;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\include\mysqld_error.h;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\sql\share\english\errmsg.sys;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\sql\share\errmsg-utf8.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\extra\CMakeFiles\GenError</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake/CMakeFiles/6ef57115885520d86856bccf6428b116/GenError.rule;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\include\mysqld_error.h;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\sql\share\english\errmsg.sys;C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\sql\share\errmsg-utf8.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\extra\CMakeFiles\GenError</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\verpa\Desktop\mysql_test\Mysql_test\mysql-connector-c-6.1.10-src\cmake\extra\CMakeFiles\GenError" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake/ZERO_CHECK.vcxproj">
+      <Project>8F7768FA-B2DD-3292-84B7-7EDD4DCE24A6</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/verpa/Desktop/mysql_test/Mysql_test/mysql-connector-c-6.1.10-src/cmake/extra/comp_err.vcxproj">
+      <Project>7F938B71-642A-3E7D-8C95-95C02777FFB7</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
