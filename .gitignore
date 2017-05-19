@@ -1,6 +1,6 @@
-*_Store/*
+*_Store*
 *.o
 *.obj
-*debug/*
-*release/*
-*.vs/*
+*debug*
+*release*
+*.vs*
