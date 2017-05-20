@@ -137,6 +137,9 @@ int main() {
 		exit(1);
 	}
 
+
+
+	int a = 0;
 	res = mysql_use_result(conn);
 	/* output table name */
 	printf("MySQL Tables in mysql database:\n");

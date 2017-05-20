@@ -10,6 +10,8 @@ foreach(SRC ${SRCS})
 #set(CMAKE_EXE_LINKER_FLAGS "-static")
 include_directories(../mysql-connector-c-6.1.10-macos10.12-x86_64/include/)
 link_directories(../mysql-connector-c-6.1.10-src/cmake/libmysql )
+
 set(SOURCE_FILES Mysql_test.cpp ${SRCS})
+
 link_libraries(libmysqlclient.a)
 add_executable(mysql_test ${SOURCE_FILES})git
