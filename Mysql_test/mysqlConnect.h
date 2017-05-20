@@ -80,8 +80,8 @@ public:
 	template<typename... ARGS>
 	void insertQuery(const std::string& query, ARGS ... args)
 	{
-		auto args = std::make_tuple(args...);
-		printf("length=%d,\n", k._Mysize);
+		auto argstuple = std::make_tuple(args...);
+		printf("length=%d,\n", std::tuple_size<decltype(argstuple)>::value);
 	}
 
 
