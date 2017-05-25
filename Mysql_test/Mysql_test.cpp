@@ -8,7 +8,10 @@
 #include <stdio.h>
 #include<string>
 #include<tuple>
-
+#include"MysqlConnect.h"
+#include"Statement.h"
+#include "SqlExecuteThread.h"
+#include "MysqlPool.h"
 struct typenum
 {
 	static enum enum_field_types {
@@ -108,39 +111,140 @@ void insertQuery(const std::string& query, ARGS ... args)
 	auto k = std::get<0>(tupleargs);
 	std::get<0>(tupleargs) = 5555;
 }
+using namespace ws;
 
+MysqlRunPool* run;
+void test_test(ws::Statement* stmt2,int err=0,void *data= nullptr)
+{
+	if(data!= nullptr)
+	std::cout<<"task:"<<*(int *)data<<std::endl;
+    while (stmt2->FetchNextRow()) {
+        //testId++;
+        //ws::Nullable<unsigned short int> countryId = stmt.GetUShortDataInRow(0);
+        Nullable<int> countryName2 = stmt2->GetLongDataInRow(0);
+        //Nullable<std::string> countryName2 = stmt2.GetStringDataInRow(0);
+        Nullable<std::string> fristname = stmt2->GetStringDataInRow(1);
+        Nullable<std::string> lastname = stmt2->GetStringDataInRow(2);
+        Nullable<std::string> address = stmt2->GetStringDataInRow(3);
+        Nullable<std::string> city = stmt2->GetStringDataInRow(4);
+        //Nullable<Julian> lastUpdate = stmt.GetTimeDataInRow(2);
+        std::cout<< "eeeee id:"<<countryName2<<"  name:"<<fristname<<","<<lastname<<"   city:"<<city<<std::endl<<std::endl;
+        //stmt2.FetchNextRow();
+        Nullable<int> id;
+        fristname=lastname=address=city="";
+		(*stmt2)>>id>>fristname>>lastname>>address>>city;
+        ///UTASSERT(testId == (*countryId));
+
+        //GregorianBreakdown gb = lastUpdate->to_gregorian(0);
+        //UTASSERT(gb.year == 2006);
+        //UTASSERT(gb.month == 2);
+        //UTASSERT(gb.day == 15);
+        std::cout<< "id:"<<id<<"  name:"<<fristname<<","<<lastname<<"   city:"<<city<<std::endl;
+        //if (testId > 1) {
+            //UTASSERT(countryName.deref() > lastCountry);
+        //}
+        //lastCountry = countryName.deref();
+        //std::cout<<"test:"<<lastCountry <<endl;
+    }
+	run->eraseStatment(stmt2);
+}
+void postmessage(std::function<void ()> call)
+{
+	printf("call post\n\n\n\n");
+	call();
+}
 
 int main() {
-	MYSQL *conn;
+	//MYSQL *conn;
 	MYSQL_RES *res;
 	MYSQL_ROW row;
 
-	char *server = "192.168.248.129";
-	char *user = "verpas";
-	char *password = "verpas"; /* set me first */
-	char *database = "";
 
-	conn = mysql_init(NULL);
+
+    ws::MysqlInitParam param;
+    param.server = "192.168.248.159";
+    param.user = "verpas";
+    param.password = "verpas"; /* set me first */
+    param.database = "cg_test";
+
+    ws::MysqlConnect* conn=NULL;
+    int err = ws::MysqlConnect::CreateMysqlConnect(param,conn);
 	insertQuery("", 1, 2, "543543", 2.2);
+
 	/* Connect to database */
-	if (!mysql_real_connect(conn, server,
-		user, password, database, 0, NULL, 0)) {
-		int error_msg = mysql_errno(conn);
-		fprintf(stderr, "%s\n", mysql_error(conn));
-		mysql_close(conn);
-		exit(1);
-	}
-	int error_msg = mysql_errno(conn);
+
 	/* send SQL query */
-	if (mysql_query(conn, "show databases")) {
-		fprintf(stderr, "%s\n", mysql_error(conn));
-		exit(1);
+    //int er = conn->Query("show databases",res);
+
+
+    ws::Statement stmt(conn, "SHOW DATABASES");
+    stmt.Execute();
+
+    int testId = 0;
+    std::string lastCountry;
+
+    while (stmt.FetchNextRow()) {
+        testId++;
+        //ws::Nullable<unsigned short int> countryId = stmt.GetUShortDataInRow(0);
+        Nullable<std::string> countryName = stmt.GetStringDataInRow(0);
+        //Nullable<Julian> lastUpdate = stmt.GetTimeDataInRow(2);
+
+        ///UTASSERT(testId == (*countryId));
+
+        //GregorianBreakdown gb = lastUpdate->to_gregorian(0);
+        //UTASSERT(gb.year == 2006);
+        //UTASSERT(gb.month == 2);
+        //UTASSERT(gb.day == 15);
+
+        if (testId > 1) {
+            //UTASSERT(countryName.deref() > lastCountry);
+        }
+        lastCountry = countryName.deref();
+        std::cout<<"test:"<<lastCountry <<endl;
+    }
+
+	run = new MysqlRunPool(param,postmessage);
+	run->init();
+	ws::Statement* test1;
+	run->excecute("select * from Persons",test1);
+	test_test(test1);
+
+	std::cout<<std::endl;
+	std::cout<<std::endl;
+	std::cout<<std::endl;
+	std::cout<<std::endl;
+	std::cout<<std::endl;
+	run->excecuteAsync("select * from Persons", nullptr,test_test);
+	int i = 0;
+	while(1)
+	{
+		++i;
+        //std::cout<<"i:"<<i<<std::endl;
+		int * userdata = new int;
+		*userdata=i;
+		run->excecuteAsync("select * from Persons", (void *)&i,test_test);
+		//run->excecute("select * from Persons",test1);
+		//test_test(test1,0,(void *)userdata);
 	}
+    //ws::Statement stmt3(*conn, "USE cg_test");
+    //stmt3.Execute();
+
+    ws::Statement stmt2(conn, "select * from Persons");
+    stmt2.Execute();
 
 
+    int testId2 = 0;
+    std::string lastCountry2;
+    ws::Statement stmt3(conn, "select * from Persons");
+    stmt3.Execute();
+    delete conn;
+    //test_test(stmt3);
+    std::cout<<"hjksh"<<std::endl;
+    //test_test(stmt2);
+    //UTASSERT(testId == 109);
 
 	int a = 0;
-	res = mysql_use_result(conn);
+
 	/* output table name */
 	printf("MySQL Tables in mysql database:\n");
 	while ((row = mysql_fetch_row(res)) != NULL)
@@ -148,5 +252,5 @@ int main() {
 
 	/* close connection */
 	mysql_free_result(res);
-	mysql_close(conn);
-}				
+
+}

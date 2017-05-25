@@ -3,15 +3,21 @@ project(mysql_test)
 set(CMAKE_BUILD_TYPE Debug)
 set(CMAKE_CXX_STANDARD 11)
 file(GLOB SRCS ./*.cpp)
+file(GLOB HEADERS ./*.h)
 include_directories(include)
 foreach(SRC ${SRCS})
     get_filename_component(NAME ${SRC} NAME_WE)
         endforeach()
+
+foreach(SRC ${HEADERS})
+    get_filename_component(NAME ${SRC} NAME_WE)
+endforeach()
+
 #set(CMAKE_EXE_LINKER_FLAGS "-static")
 include_directories(../mysql-connector-c-6.1.10-macos10.12-x86_64/include/)
 link_directories(../mysql-connector-c-6.1.10-src/cmake/libmysql )
 
-set(SOURCE_FILES Mysql_test.cpp ${SRCS})
+set(SOURCE_FILES Mysql_test.cpp ${SRCS} ${HEADERS} MysqlPool.cpp MysqlPool.h SqlExecuteThread.cpp)
 
 link_libraries(libmysqlclient.a)
-add_executable(mysql_test ${SOURCE_FILES})git
+add_executable(mysql_test ${SOURCE_FILES})
