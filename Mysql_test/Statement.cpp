@@ -34,6 +34,7 @@ void Statement::Prepare() {
 	_numberAffectedRows = 0;
 
     _stmt = _db->Statement_init();
+    std::cout<<"create stmt:"<<_stmt<<std::endl;
 	if ( _stmt == NULL) {
 		throw DatabaseException(_db->db(), "Error in Statement::Prepare during initialize");
 	}
@@ -42,6 +43,7 @@ void Statement::Prepare() {
 		mysql_stmt_errno(_stmt);
 		std::string err = mysql_stmt_error(_stmt);
 		mysql_stmt_close(_stmt);
+        std::cout<<"==============================="<<std::endl;
         std::cout<<err<<std::endl;
 		throw DatabaseException(_stmt, "Error in Statement::Prepare during prepare");
 	}
@@ -186,6 +188,7 @@ void Statement::Prepare() {
 	if (_resultParams.size() != _numberResultColumns) {
 		mysql_free_result(metaData);
 		mysql_stmt_close(_stmt);
+        std::cout<<"==============================="<<std::endl;
 		throw DatabaseException("Error in Statement::Prepare", 0, "----", "was not able to bind all parameters");
 	}
 
@@ -197,6 +200,7 @@ void Statement::Prepare() {
 	if (_numberResultColumns > 0) {
 		if (mysql_stmt_bind_result(_stmt, _resultBind) != 0) {
 			mysql_free_result(metaData);
+            std::cout<<"==============================="<<std::endl;
 			mysql_stmt_close(_stmt);
 			throw DatabaseException(_stmt, "Error in Statement::Prepare while binding results");
 		}
@@ -206,10 +210,13 @@ void Statement::Prepare() {
 }
 
 Statement::~Statement() {
-	if (_resultWasStored) { 
+	if (_resultWasStored) {
 		mysql_stmt_free_result(_stmt);
 	}
-	mysql_stmt_close(_stmt);
+    std::cout<<"delete stmt"<<_stmt<<std::endl;
+   // mysql_stmt
+	//mysql_stmt_reset(_stmt);
+    mysql_stmt_close(_stmt);
 	ClearParameters();
 	ClearResults();
 }

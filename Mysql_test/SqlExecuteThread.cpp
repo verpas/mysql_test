@@ -8,6 +8,7 @@ namespace ws
 {
     void MysqlExecuteThread::run()
     {
+        mysql_library_init(NULL,NULL,NULL);
         mysql_thread_init();
 
         //int err  = MysqlConnect::CreateMysqlConnect(init,mysql);
@@ -49,5 +50,6 @@ namespace ws
 
         }
         mysql_thread_end();
+        mysql_library_end();
     }
 };

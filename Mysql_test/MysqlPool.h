@@ -17,7 +17,7 @@
 #include <tuple>
 #include <set>
 #include <queue>
-
+static std::mutex g_mutex_;
 namespace ws
 {
 
@@ -78,7 +78,7 @@ namespace ws
         {
             MysqlConnect*  buff_db= nullptr;
             {
-                MysqlRunPool_Function_begin();
+
                 if(unuse_pool_.empty())
                     return nullptr;
                 buff_db= unuse_pool_.front();
@@ -87,31 +87,38 @@ namespace ws
             }
             return buff_db;
         }
-        void eraseStatment(Statement *& stmt)
+        void eraseStatment(Statement * stmt)
         {
             if(stmt== nullptr)
                 return ;
-            MysqlRunPool_Function_begin();
+
             auto Iter = use_connect.find(stmt->_db);
             if(Iter!=use_connect.end())
             {
                 use_connect.erase(Iter);
                 unuse_pool_.push(*Iter);
             }
-            delete stmt;
+            {
+                MysqlRunPool_Function_begin();
+                delete stmt;
+            }
+
         }
         bool excecute(const std::string&sql , Statement *& stmt)
         {
+            MysqlRunPool_Function_begin();
             MysqlConnect*  buff_db = GetNextConnect();
             if(buff_db== nullptr)
                 return false;
 
             int time = reconnct_time_;
+
             while(time)
             {
 
                 try
                 {
+                    stmt= nullptr;
                     if(time!=reconnct_time_)
                     {
                         int err = buff_db->connect();
@@ -122,16 +129,20 @@ namespace ws
                         } else
                             return false;
                     }
+
                     stmt = new Statement(buff_db,sql);
-                    if(stmt== nullptr)
+
+                    if(stmt== NULL)
                         return false;
                     stmt->Execute();
                     return true;
                 }
                 catch(DatabaseException& data)
                 {
+                    std::cout<<"cdsfdsfd"<<std::endl;
                     if(data.GetErrorCode()==2006||data.GetErrorCode()==2013)
                     {
+
                         time--;
                         continue;
                     }
@@ -162,7 +173,13 @@ namespace ws
                         } else
                             return false;
                     }
-                    auto stmt = new Statement(buff_db,sql);
+                    Statement * stmt= nullptr;
+                    {
+                        MysqlRunPool_Function_begin();
+                        stmt = new Statement(buff_db,sql);
+                    }
+
+
                     if(stmt== nullptr)
                         return false;
                     asyncTask task;

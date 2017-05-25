@@ -112,7 +112,8 @@ void insertQuery(const std::string& query, ARGS ... args)
 	std::get<0>(tupleargs) = 5555;
 }
 using namespace ws;
-
+std::queue<ws::Statement* > vvv;
+std::queue<std::function<void ()> > que_fun;
 MysqlRunPool* run;
 void test_test(ws::Statement* stmt2,int err=0,void *data= nullptr)
 {
@@ -146,12 +147,14 @@ void test_test(ws::Statement* stmt2,int err=0,void *data= nullptr)
         //lastCountry = countryName.deref();
         //std::cout<<"test:"<<lastCountry <<endl;
     }
-	run->eraseStatment(stmt2);
+    //vvv.push(stmt2);
+    //std::unique_lock<std::mutex> buf(g_mutex_);
+    run->eraseStatment(stmt2);
 }
 void postmessage(std::function<void ()> call)
 {
-	printf("call post\n\n\n\n");
-	call();
+    //que_fun.push(call);
+    call();
 }
 
 int main() {
@@ -218,13 +221,35 @@ int main() {
 	int i = 0;
 	while(1)
 	{
+        //std::unique_lock<std::mutex> buf(g_mutex_);
 		++i;
         //std::cout<<"i:"<<i<<std::endl;
 		int * userdata = new int;
 		*userdata=i;
-		run->excecuteAsync("select * from Persons", (void *)&i,test_test);
+		//test_test= nullptr;
+        while(!que_fun.empty())
+        {
+            std::cout<<"delete"<<std::endl;
+            auto fff= que_fun.front();
+            que_fun.pop();
+            fff();
+        }
+        while(!vvv.empty())
+        {
+            std::cout<<"delete"<<std::endl;
+            auto fff= vvv.front();
+            vvv.pop();
+            run->eraseStatment(fff);
+        }
+		run->excecuteAsync("select * from Persons", (void *)userdata,test_test);
+
 		//run->excecute("select * from Persons",test1);
-		//test_test(test1,0,(void *)userdata);
+		if(test1!= nullptr)
+		{
+			//test_test(test1,0,(void *)userdata);
+			//run->eraseStatment(test1);
+		}
+
 	}
     //ws::Statement stmt3(*conn, "USE cg_test");
     //stmt3.Execute();
